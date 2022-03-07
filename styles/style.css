@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: var(--Paleblue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: top;
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 22px 5px rgba(0, 0, 0, 0.2);
+}
+
+main > article img:first-child {
+  width: 25vw;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+} 
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.order span {
+  color: var(--Darkblue);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+.order p {
+  color: var(--Desaturatedblue);
+  font-size: 15px;
+  margin-bottom: 2vh;
+  width: 80%;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  background-color: var(--Verypaleblue);
+  width: 20vw;
+  height: 11vh;
+  border-radius: 10px;
+}
+
+.plan .price img {
+  width: 3.3vw;
+  margin-right: 1vw;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  padding: 0px 1vw;
+}
+
+.price span {
+  display: block;
+  font-size: 14px;
+}
+
+.price span:first-child {
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.price span:not(:first-child) {
+  color: var(--Desaturatedblue);
+}
+
+.change {
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
+.change a {
+  font-weight: bold;
+  font-size: 1vw;
+  color: var(--Brightblue);
+}
+
+.change a:hover {
+  transition: all .3s;
+  color: #766CF1;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: var(--Brightblue);
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  height: 6vh;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  transition: all .3s;
+  background-color: #766CF1;
+  box-shadow: 1px 18px 31px -3px #776cf1a1;
+}
+
+.cancel {
+  background: none;
+  border: none;
+  color: var(--Desaturatedblue);
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.cancel:hover {
+  transition: color .3s;
+  color: var(--Darkblue);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+  main article {
+    width: 80%;
+    height: 80%;
+    justify-content: space-between;
+  }  
+  main > article img:first-child {
+    width: 100%;
+  } 
+  .order span {
+    font-weight: 900;
+  }
+  .order p {
+    width: 80%;
+  }
+  .plan {
+    width: 80%;
+    padding: 0 4vw;
+  }
+  .plan .price img {
+    width: 12vw;
+    margin-right: 4vw;
+  }
+  .plan a {
+    font-size: 0.75rem;
+    font-weight: 900;
+  }
+  .y-plan {
+    font-weight: 900;
+  }
+}
+
