@@ -134,10 +134,10 @@ button {
   width: 80%;
   height: 6vh;
   border-radius: 10px;
+  transition: all .3s;
 }
 
 .submit:hover {
-  transition: all .3s;
   background-color: #766CF1;
   box-shadow: 1px 18px 31px -3px #776cf1a1;
 }
