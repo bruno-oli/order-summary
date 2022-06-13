@@ -112,10 +112,10 @@ main > article img:first-child {
   font-weight: bold;
   font-size: 1vw;
   color: var(--Brightblue);
+  transition: all .3s;
 }
 
 .change a:hover {
-  transition: all .3s;
   color: #766CF1;
   text-decoration: none;
 }
